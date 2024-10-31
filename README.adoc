@@ -1,0 +1,2 @@
+== Synopsis
+Code for the "Advanced testing techniques" presentation (in Python).
