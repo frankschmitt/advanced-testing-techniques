@@ -1,2 +1,13 @@
 == Synopsis
 Code for the "Advanced testing techniques" presentation (in Python).
+
+== Prerequisites
+* Python (3.10 or newer)
+* Poetry
+
+== Install
+poetry Install
+
+== Run tests
+poetry shell
+> python -munittest
