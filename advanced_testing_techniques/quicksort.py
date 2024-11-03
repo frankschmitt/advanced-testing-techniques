@@ -1,4 +1,6 @@
-def quicksort(input):
+from typing import List
+
+def quicksort(input: List[int]) -> List[int]:
     """Sort the input list, and return the sorted list (input is unchanged)"""
     if len(input) <= 1:
         return input

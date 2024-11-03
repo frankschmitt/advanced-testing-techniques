@@ -9,5 +9,11 @@ Code for the "Advanced testing techniques" presentation (in Python).
 poetry Install
 
 == Run tests
+=== Unit tests
 poetry shell
 > python -munittest
+
+==== Hypothesis (property-based tests)
+poetry shell
+pytest
+
