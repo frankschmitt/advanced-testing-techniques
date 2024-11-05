@@ -17,3 +17,12 @@ poetry shell
 poetry shell
 pytest
 
+==== Cosmic Ray (mutation testing)
+cosmic-ray init tutorial.toml tutorial.sqlite​
+cosmic-ray --verbosity=INFO baseline tutorial.toml​
+cr-report tutorial.sqlite --show-pending # should show 0 completed​
+cosmic-ray exec tutorial.toml tutorial.sqlite​
+cr-report tutorial.sqlite --show-pending # should show 0 pending​
+cr-html tutorial.sqlite > report.html​
+start report.html​
+
