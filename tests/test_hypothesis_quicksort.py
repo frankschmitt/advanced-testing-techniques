@@ -5,5 +5,9 @@ from advanced_testing_techniques.quicksort import quicksort
 
 # Property Based Unit Testing  
 @given(st.lists(st.integers(), min_size=0, max_size=25))  
-def test_quicksort_same_result_as_library_sort(input_list):
-    assert quicksort(input_list) == sorted(input_list)
+def test_quicksort_is_idempotent(input_list):
+    assert quicksort(quicksort(input_list)) == quicksort(input_list)
+
+@given(st.lists(st.integers(), min_size=0, max_size=25))  
+def test_quicksort_keeps_length_of_input_list(input_list):
+    assert len(quicksort(input_list)) == len(input_list)

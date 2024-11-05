@@ -13,7 +13,7 @@ class QuicksortTestCase(unittest.TestCase):
         assert quicksort([4,3,2,1]) == [1,2,3,4]
 
     def test_arbitrary_sequence(self):
-        # bonus points if you figoure out the meaning of this input :-)
+        # bonus points if you figure out the meaning of this input :-)
         assert quicksort([9, 12, 19, 6]) == [6, 9, 12, 19]
 
     def test_alternating(self):
