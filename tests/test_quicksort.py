@@ -1,6 +1,11 @@
 from advanced_testing_techniques.quicksort import quicksort
 
+import random
 import unittest
+
+# run tests in inverse order; to restore original order, replace -1 by 1
+random.seed()
+unittest.TestLoader.sortTestMethodsUsing = lambda *args: -1
 
 class QuicksortTestCase(unittest.TestCase):
     def test_sort_empty_array(self):
